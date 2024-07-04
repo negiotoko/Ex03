@@ -40,5 +40,15 @@ class Program
         }
 
         Console.WriteLine($"Heads: {headsCount}, Tails: {tailsCount}");
+
+        if (headsCount > tailsCount)
+        {
+            Console.WriteLine("{0} won!",name);
+        }
+        
+        else if(headsCount < tailsCount)
+        {
+            Console.WriteLine("{0} lost!",name);
+        }
     }
 }
