@@ -11,6 +11,10 @@ class Program
             return random.Next(2) == 0 ? "Heads" : "Tails";
         }
 
+        Console.WriteLine("Who are you?");
+        string name = Console.ReadLine();
+        Console.WriteLine("Hello,{1}!",name);
+
         Console.WriteLine("Tossing a coin...");
         string[] results = new string[3];
         
